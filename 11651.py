@@ -9,7 +9,7 @@ for i in range(n):
     [a, b] = map(int, input().split())
     array.append([a, b])
 
-r_array = sorted(array)
+array.sort(key= lambda x: (x[1], x[0]))
 
 for i in range(n):
-    print(r_array[i][0], r_array[i][1])
+    print(array[i][0], array[i][1])
